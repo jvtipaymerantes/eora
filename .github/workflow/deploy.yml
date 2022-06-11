@@ -1,0 +1,19 @@
+# Increment this if you just want to rerun : 1
+
+name: "Deploying"
+
+on:
+  push:
+    branches:
+      - "master"
+    
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+            heroku_api_key: ${{cd03d44a-9054-44b1-8a8a-303f93939008}}
+            heroku_app_name: "eoraapi" #Must be unique in Heroku
+            heroku_email: "jvtipaymerantes@gmail.com"
