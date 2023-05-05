@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="">
+
+  <!-- NAVI -->
+    <nav class="bg-mainGreen md:flex md:items-center md:justify-between p-2">
+      <div class="flex justify-between items-center z-[5]">
+        <a href="" class="p-2 mr-4 inline-flex items-center">
+            <img src="../public/image/logo.png" alt="" class="w-10 h-12 mr-2">
+            <span class=" mr-4 text-xl font-bold text-white">EORAAPI</sp>
+        </a>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          <style>
+            ion-icon {
+              color: white;
+            }
+          </style>
+        </span>
+      </div>
+
+      <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-mainGreen w-full left-0 
+      md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
+        <li class="mx-2 my-6 md:my-0">
+          <a href="../src/index.html" class="font-bold text-white">HOME</a>
+        </li>
+        <li class="mx-2 my-6 md:my-0 lg:mx-6">
+          <a href="../public/objective.html" class="rounded font-bold text-white">OBJECTIVE</a>
+        </li>
+        <li class="mx-2 my-6 md:my-0 lg:mx-6">
+          <a href="" class=" rounded font-bold text-white">TRAINING</a>
+        </li>
+        <li class="mx-2 my-6 md:my-0 lg:mx-6">
+          <a href="" class=" rounded font-bold text-white">GALLERY</a>
+        </li>
+        <li class="mx-2 my-6 md:my-0 lg:mx-6">
+          <a href="" class="font-bold text-white">ABOUT US</a>
+        </li>
+        <li class="mx-2 my-6 md:my-0 lg:mx-6">
+          <a href="" class="font-bold text-white">CONTACT US</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+      }
+    </script>
+
+    <!-- END OF NAVI -->
+
+    <!-- Training Page -->
+<div class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Training Programs</h2>
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          Build Your Skills With Us
+        </p>
+        <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          We offer a range of flexible training programs that cater to the diverse needs of our students. Choose from our selection of courses and start enhancing your skills today.
+        </p>
+      </div>
+  
+  
+   <div class="mt-10">
+        <ul class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Training Item 1 -->
+          <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+            <div class="bg-supportingGreenLight w-full flex items-center justify-between p-6 space-x-6">
+              <div class="flex-1 truncate">
+                <div class="flex items-center space-x-3">
+                  <h3 class="text-gray-900 text-lg font-medium truncate">Class 1: Normal Class</h3>
+                  <span class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">New</span>
+                </div>
+                <p class="mt-1 text-gray-500 text-sm truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc ex, convallis sed convallis eget, aliquam a odio. </p>
+              </div>
+              <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+            </div>
+            <div>
+              <div class="bg-supportingGreenLight  -mt-px flex divide-x divide-gray-200">
+                <div class="w-0 flex-1 flex">
+                  <a href="#" class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500">
+                    <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 10a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm2.293 2.293a1 1 0 011.414 0L10 12.586l.293.293a1 1 0 01-1.414 1.414l-.293-.293-.293.293a1 1 0 01-1.414-1.414l.293-.293-.293-.293a1 1 0 011.414-1.414l.293.293z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="ml-3">View Course Details</span>
+                        </a>
+                        </div>
+                            <div class="-ml-px w-0 flex-1 flex">
+                            <a href="#" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500">
+                            <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 010 2H4a1 1 0 01-1-1zM3 9a1 1 0 011-1h12a1 1 0 010 2H4a1 1 0 01-1-1zM3 14a1 1 0 011-1h8a1 1 0 010 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-3">Enroll Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </li>
+  <!-- Training Item 2 -->
+  <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+    <div class="bg-supportingGreenLight w-full flex items-center justify-between p-6 space-x-6">
+      <div class="flex-1 truncate">
+        <div class="flex items-center space-x-3">
+          <h3 class="text-gray-900 text-lg font-medium truncate">Class 2: VIP Class</h3>
+          <span class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">New</span>
+        </div>
+        <p class="mt-1 text-gray-500 text-sm truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc ex, convallis sed convallis eget, aliquam a odio. </p>
+      </div>
+      <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+    </div>
+    <div>
+      <div class="bg-supportingGreenLight  -mt-px flex divide-x divide-gray-200">
+        <div class="w-0 flex-1 flex">
+          <a href="#" class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500">
+            <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 10a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm2.293 2.293a1 1 0 011.414 0L10 12.586l.293.293a1 1 0 01-1.414 1.414l-.293-.293-.293.293a1 1 0 01-1.414-1.414l.293-.293-.293-.293a1 1 0 011.414-1.414l.293.293z" clip-rule="evenodd" />
+            </svg>
+            <span class="ml-3">View Course Details</span>
+                </a>
+                </div>
+                    <div class="-ml-px w-0 flex-1 flex">
+                    <a href="#" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500">
+                    <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 010 2H4a1 1 0 01-1-1zM3 9a1 1 0 011-1h12a1 1 0 010 2H4a1 1 0 01-1-1zM3 14a1 1 0 011-1h8a1 1 0 010 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="ml-3">Enroll Now</span>
+                </a>
+            </div>
+        </div>
+    </div>
+  </li>
+  <!-- 3 -->
+
+  <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+    <div class="bg-supportingGreenLight w-full flex items-center justify-between p-6 space-x-6">
+      <div class="flex-1 truncate">
+        <div class="flex items-center space-x-3">
+          <h3 class="text-gray-900 text-lg font-medium truncate">Class 1: Private Class</h3>
+          <span class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">New</span>
+        </div>
+        <p class="mt-1 text-gray-500 text-sm truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc ex, convallis sed convallis eget, aliquam a odio. </p>
+      </div>
+      <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+    </div>
+    <div>
+      <div class="bg-supportingGreenLight -mt-px flex divide-x divide-gray-200">
+        <div class="w-0 flex-1 flex">
+          <a href="#" class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500">
+            <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 10a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm2.293 2.293a1 1 0 011.414 0L10 12.586l.293.293a1 1 0 01-1.414 1.414l-.293-.293-.293.293a1 1 0 01-1.414-1.414l.293-.293-.293-.293a1 1 0 011.414-1.414l.293.293z" clip-rule="evenodd" />
+            </svg>
+            <span class="ml-3">View Course Details</span>
+                </a>
+                </div>
+                    <div class="-ml-px w-0 flex-1 flex">
+                    <a href="#" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500">
+                    <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 010 2H4a1 1 0 01-1-1zM3 9a1 1 0 011-1h12a1 1 0 010 2H4a1 1 0 01-1-1zM3 14a1 1 0 011-1h8a1 1 0 010 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="ml-3">Enroll Now</span>
+                </a>
+            </div>
+        </div>
+    </div>
+  </li>
+
+
+</ul>
+</div>
+</div>
+</div>
+
+    <footer class="bg-partTimeGreen text-center lg:text-center mb-auto">
+        <div class="px-14 py-4">
+          <div class="grid lg:grid-cols-3 md:grid-cols-2">
+
+            <div class="mb-2">
+      
+              <ul class="list-none mb-0 text-left">
+                <li>
+                  <a href="#!" class="text-supportingGreenLight font-bold">19 Lawton Ave. Army Training </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-supportingGreenLight font-bold">Unit (ATU), 1630 Taguig</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-supportingGreenLight font-bold">Philippines</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-supportingGreenLight">0949 168 6383</a>
+                </li>
+              </ul>
+            </div>
+      
+      
+            <div class="mb-2">
+              <h5 class="uppercase font-bold mb-2.5 text-supportingGreenLight">Links</h5>
+              </ul>
+            </div>
+      
+            <div class="mb-2">
+              <ul class="list-none mb-0 text-right">
+                <li>
+                  <a href="#!" class="text-supportingGreenLight font-bold">HOME</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-supportingGreenLight font-bold">OBJECTIVE</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-supportingGreenLight font-bold">TRAINING</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-supportingGreenLight font-bold">GALLERY</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-supportingGreenLight font-bold">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-supportingGreenLight font-bold">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-mainGreen text-white text-center p-4 italic">
+          "We Save Lives" EORAAPI © 2022 All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>
